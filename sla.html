@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+    <style>body {
+        display: grid;
+        grid-template:
+            "header header header   header   header  header" 119.1px
+            "aside  aside  link     article  article article" 119.1px
+            "aside  aside  link     article  article article" 119.1px 
+            "aside  aside  player   player   image image" 119.1px
+            "aside  aside  article1 article1 image image" 119.1px 
+            "aside  aside  article1 article1 image image" 119.1px 
+            "aside  aside  article1 article1 link1 link2" 119.1px 
+            "aside  aside  footer   footer   footer footer" 119.1px
+            ;
+    }
+    
+    .item {
+        padding:10px;
+        margin: 2px;
+    }
+    
+    .header {
+        grid-area: header;
+        background: Green;
+    }
+    
+    .aside {
+        grid-area:aside;
+        background: Blue;
+    }
+    
+    .link {
+        grid-area:link;
+        background: Orange;
+    }
+    
+    .article {
+        grid-area:article;
+        background: Violet;
+    }
+    
+    .player {
+        grid-area:player;
+        background: brown;
+    }
+    
+    .image {
+        grid-area: image;
+        background: purple;
+    }
+    
+    .article1 {
+        grid-area: article1;
+        background: seagreen;
+    }
+    
+    .link1 {
+        grid-area:link1;
+        background: yellow;
+    }
+    
+    .link2 {
+        grid-area:link2;
+        background: red;
+    }
+    
+    .footer {
+        grid-area:footer;
+        background: black;
+    }</style>
+</head>
+<body>
+    <div class="item header"></div>
+    <div class="item aside"></div>
+    <div class="item link"></div>
+    <div class="item article"></div>
+    <div class="item player"></div>
+    <div class="item article1"></div>
+    <div class="item image"></div>
+    <div class="item link1"></div>
+    <div class="item link2"></div>
+    <div class="item footer"></div>
+</body>
+</html>
